@@ -21,7 +21,6 @@ class FilterCategory : Filter {
 //        value should not be null and not empty
         if (!constraint.isNullOrEmpty()) {
             //search value is not null not empty
-
 //            change to uppercase or lower case to avoid case sensitivity
             constraint = constraint.toString().uppercase()
             val filteredModels: ArrayList<ModelCategory> = ArrayList()

@@ -32,7 +32,6 @@ class DashboardAdminActivity : AppCompatActivity() {
         loadCategories()
         binding.searchEt.addTextChangedListener(object:TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                TODO("Not yet implemented")
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -46,7 +45,6 @@ class DashboardAdminActivity : AppCompatActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                TODO("Not yet implemented")
             }
         })
 //        logout
@@ -57,8 +55,11 @@ class DashboardAdminActivity : AppCompatActivity() {
         }
 //        handle click, start add category page
         binding.addCategoryBtn.setOnClickListener {
-            startActivity(Intent(this@DashboardAdminActivity,CategoryAddActivity::class.java))
-
+            startActivity(Intent(this,CategoryAddActivity::class.java))
+        }
+        //        handle click, start add pdf page
+        binding.addPdfFab.setOnClickListener {
+            startActivity(Intent(this,PdfAddActivity::class.java));
         }
     }
 
@@ -74,9 +75,8 @@ class DashboardAdminActivity : AppCompatActivity() {
 //                    get data as model
                     val model = ds.getValue(ModelCategory::class.java)
 //                    add to arrayList
-                    if (model != null) {
-                        categoryArrayList.add(model)
-                    }
+                        categoryArrayList.add(model!!)
+
                 }
 //                setup adapter
                 adapterCategory = AdapterCategory(this@DashboardAdminActivity, categoryArrayList )
