@@ -1,4 +1,4 @@
-package com.bookskotlin.bookapp
+package com.bookskotlin.bookapp.models
 
 class ModelCategory {
 //    variables, must match in firebase

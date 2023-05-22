@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import com.bookskotlin.bookapp.adapter.AdapterCategory
 import com.bookskotlin.bookapp.databinding.ActivityDashboardAdminBinding
+import com.bookskotlin.bookapp.models.ModelCategory
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

@@ -1,4 +1,4 @@
-package com.bookskotlin.bookapp
+package com.bookskotlin.bookapp.adapter
 
 import android.app.AlertDialog
 import android.content.Context
@@ -12,6 +12,9 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bookskotlin.bookapp.FilterCategory
+import com.bookskotlin.bookapp.models.ModelCategory
+import com.bookskotlin.bookapp.PdfListAdminActivity
 import com.bookskotlin.bookapp.databinding.RowCategoryBinding
 import com.google.firebase.database.FirebaseDatabase
 
@@ -72,7 +75,7 @@ class AdapterCategory : RecyclerView.Adapter<AdapterCategory.HolderCategory>, Fi
         }
 //        handle click,start pdf list admin activity, also pass pdf id,title
         holder.itemView.setOnClickListener {
-            val intent = Intent(context,PdfListAdminActivity::class.java)
+            val intent = Intent(context, PdfListAdminActivity::class.java)
             intent.putExtra("categoryId",id)
             intent.putExtra("category",category)
             context.startActivity(intent)

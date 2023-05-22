@@ -1,6 +1,8 @@
 package com.bookskotlin.bookapp
 
 import android.widget.Filter
+import com.bookskotlin.bookapp.adapter.AdapterCategory
+import com.bookskotlin.bookapp.models.ModelCategory
 
 class FilterCategory : Filter {
     //    ArrayList in which we want to search
