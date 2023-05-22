@@ -65,6 +65,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/searchEt"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        tools:listitem="@layout/row_pdf_admin"/>
 
 </RelativeLayout>

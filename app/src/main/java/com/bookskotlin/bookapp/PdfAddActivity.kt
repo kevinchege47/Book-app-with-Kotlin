@@ -38,7 +38,7 @@ class PdfAddActivity : AppCompatActivity() {
         binding = ActivityPdfAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //    init firebase auth
-    firebaseAuth = FirebaseAuth.getInstance();
+    firebaseAuth = FirebaseAuth.getInstance()
         loadPdfCategories()
 
 //    setup progress dialog
