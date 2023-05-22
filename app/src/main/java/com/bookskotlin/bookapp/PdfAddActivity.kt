@@ -1,6 +1,5 @@
 package com.bookskotlin.bookapp
 
-import android.app.Application
 import android.app.ProgressDialog
 import android.content.Intent
 import android.net.Uri
@@ -39,7 +38,7 @@ class PdfAddActivity : AppCompatActivity() {
         binding = ActivityPdfAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //    init firebase auth
-    firebaseAuth = FirebaseAuth.getInstance()
+    firebaseAuth = FirebaseAuth.getInstance();
         loadPdfCategories()
 
 //    setup progress dialog
